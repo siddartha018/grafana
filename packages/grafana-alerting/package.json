@@ -3,7 +3,7 @@
   "license": "Apache-2.0",
   "name": "@grafana/alerting",
   "version": "13.3.0-pre",
-  "description": "Grafana Alerting Library – Build vertical integrations on top of the industry-leading alerting solution",
+  "description": "Grafana Alerting Library \u2013 Build vertical integrations on top of the industry-leading alerting solution",
   "keywords": [
     "typescript",
     "grafana",
@@ -54,7 +54,7 @@
     "./LICENSE_APACHE2"
   ],
   "scripts": {
-    "build": "tsc -p ./tsconfig.build.json && rollup -c rollup.config.ts --configPlugin esbuild",
+    "build": "node init && tsc -p ./tsconfig.build.json && rollup -c rollup.config.ts --configPlugin esbuild",
     "bundle": "rollup -c rollup.config.ts --configPlugin esbuild",
     "clean": "rimraf ./dist ./compiled ./unstable ./testing ./package.tgz",
     "typecheck": "tsc --emitDeclarationOnly false --noEmit",

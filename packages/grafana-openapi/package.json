@@ -37,7 +37,7 @@
     "LICENSE_APACHE2"
   ],
   "scripts": {
-    "build": "yarn clean && yarn create:folders && yarn copy:dist",
+    "build": "node init && yarn clean && yarn create:folders && yarn copy:dist",
     "clean": "rm -rf ./dist && rm -f package.tgz",
     "copy:api": "cp ../../public/openapi3.json ./src/api",
     "copy:dist": "cp ./src/apis/* ./dist/apis && cp ./src/api/* ./dist/api",
